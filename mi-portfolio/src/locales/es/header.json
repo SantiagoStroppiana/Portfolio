@@ -1,0 +1,9 @@
+{
+  "nombre": "Santiago Stroppiana",
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  }
+}
