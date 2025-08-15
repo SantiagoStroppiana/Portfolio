@@ -20,7 +20,7 @@ export function Footer() {
           
           <div className="social-links">
             <a 
-              href="https://github.com/tu-usuario" 
+              href="https://github.com/SantiagoStroppiana" 
               className="social-link github"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,7 +29,7 @@ export function Footer() {
               GitHub
             </a>
             <a 
-              href="https://linkedin.com/in/tu-perfil" 
+              href="https://www.linkedin.com/in/santiago-stroppiana/" 
               className="social-link linkedin"
               target="_blank"
               rel="noopener noreferrer"

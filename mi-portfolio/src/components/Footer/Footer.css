@@ -26,7 +26,7 @@
   font-family: var(--font-heading, 'Poppins', sans-serif);
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--siaj-primary, #3b82f6);
+  color: var(--global-primary, #3b82f6);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -34,13 +34,13 @@
 }
 
 .footer-logo:hover {
-  color: var(--siaj-primary-light, #60a5fa);
+  color: var(--global-primary-light, #60a5fa);
 }
 
 .logo-icon {
   width: 24px;
   height: 24px;
-  background: linear-gradient(135deg, var(--siaj-primary, #3b82f6), var(--siaj-secondary, #8b5cf6));
+  background: linear-gradient(135deg, var(--global-primary, #3b82f6), var(--global-secondary, #8b5cf6));
   border-radius: 4px;
   display: flex;
   align-items: center;

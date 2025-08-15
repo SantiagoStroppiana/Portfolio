@@ -6,8 +6,10 @@ import "aos/dist/aos.css";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home/Home";
+import { AboutMe } from "./pages/AboutMe/AboutMe";
+import { Stack } from "./pages/AboutMe/Stack";
+import { Contact } from "./pages/Contact/Contact";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
-
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,26 @@ function App() {
       path: "/",
       element: <Home />,
       name: "Home",
+    },
+    {
+      path: "/sobreMi",
+      element: (
+        <>
+          <AboutMe />
+          <Stack />
+        </>
+      ),
+      name: "AboutMe",
+    },
+    // {
+    //   path: "/proyectos",
+    //   element: <Proyects />,
+    //   name: "Proyects",
+    // },
+    {
+      path: "/contacto",
+      element: <Contact />,
+      name: "Contact",
     },
   ];
 

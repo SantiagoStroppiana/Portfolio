@@ -69,9 +69,9 @@ export function Header() {
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <Link className="nav-link" to="/" onClick={handleLinkClick}>{t("nav.home")}</Link>
-          <Link className="nav-link" to="/" onClick={handleLinkClick}>{t("nav.about")}</Link>
-          <Link className="nav-link" to="/" onClick={handleLinkClick}>{t("nav.projects")}</Link>
-          <Link className="nav-link" to="/" onClick={handleLinkClick}>{t("nav.contact")}</Link>
+          <Link className="nav-link" to="/sobreMi" onClick={handleLinkClick}>{t("nav.about")}</Link>
+          <Link className="nav-link" to="/proyectos" onClick={handleLinkClick}>{t("nav.projects")}</Link>
+          <Link className="nav-link" to="/contacto" onClick={handleLinkClick}>{t("nav.contact")}</Link>
         </nav>
         
         {/* Selector de idioma comentado */}

@@ -1,16 +1,14 @@
-/* Home.css */
 .home {
   min-height: 100vh;
 }
 
 .aboutMe {
-  background: linear-gradient(135deg, var(--siaj-background, #0f172a) 0%, var(--siaj-muted, #1e293b) 50%, var(--siaj-primary-dark, #033b70) 100%);
+  background: linear-gradient(135deg, var(--global-background, #0f172a) 0%, var(--global-muted, #1e293b) 50%, var(--global-primary-dark, #033b70) 100%);
   padding: 6rem 0 8rem 0;
   position: relative;
   overflow: hidden;
 }
 
-/* Efecto de partículas/decorativo de fondo */
 .aboutMe::before {
   content: '';
   position: absolute;
@@ -47,7 +45,7 @@
 .aboutMe-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--siaj-foreground, #f1f5f9);
+  color: var(--global-foreground, #f1f5f9);
   margin-bottom: 1.5rem;
   line-height: 1.2;
   letter-spacing: -0.025em;
@@ -56,7 +54,7 @@
 
 .aboutMe-descripcion {
   font-size: 1.15rem;
-  color: var(--siaj-muted-foreground, #94a3b8);
+  color: var(--global-muted-foreground, #94a3b8);
   text-align: justify;
   margin-bottom: 3rem;
   line-height: 1.7;
@@ -71,7 +69,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--siaj-primary, #3b82f6), var(--siaj-primary-dark, #1d4ed8));
+  background: linear-gradient(135deg, var(--global-primary, #3b82f6), var(--global-primary-dark, #1d4ed8));
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -90,10 +88,33 @@
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
-  background: linear-gradient(135deg, var(--siaj-primary-light, #60a5fa), var(--siaj-primary, #3b82f6));
+  background: linear-gradient(135deg, var(--global-primary-light, #60a5fa), var(--global-primary, #3b82f6));
 }
 
-/* Imagen de perfil - Estilo más natural */
+
+.btn-secondary {
+  background: linear-gradient(135deg, #8A2BE2, #6A1B9A);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(187, 59, 246, 0.3);
+  font-family: var(--font-primary, 'Inter', sans-serif);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(171, 59, 246, 0.4);
+  background: linear-gradient(135deg, #9b60fa, #923bf6);
+}
+
 .aboutMe-right {
   display: flex;
   justify-content: flex-end;
@@ -107,7 +128,7 @@
   height: 400px;
   border-radius: 20px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--siaj-primary, #3b82f6), var(--siaj-secondary, #8b5cf6));
+  background: linear-gradient(135deg, var(--global-primary, #3b82f6), var(--global-secondary, #8b5cf6));
   padding: 3px;
   box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
   transition: all 0.3s ease;
@@ -127,7 +148,7 @@
   right: -10px;
   bottom: -10px;
   border-radius: 25px;
-  background: linear-gradient(135deg, var(--siaj-primary, #3b82f6), var(--siaj-accent, #06b6d4));
+  background: linear-gradient(135deg, var(--global-primary, #3b82f6), var(--global-accent, #06b6d4));
   opacity: 0.2;
   z-index: -1;
   filter: blur(15px);
@@ -139,10 +160,9 @@
   border-radius: 17px;
   object-fit: cover;
   object-position: center top;
-  background-color: var(--siaj-muted, #1e293b);
+  background-color: var(--global-muted, #1e293b);
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .aboutMe-content {
     grid-template-columns: 1fr 300px;
@@ -248,6 +268,14 @@
     width: 100%;
     justify-content: center;
   }
+
+   .btn-secondary {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+    width: 100%;
+    justify-content: center;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -262,5 +290,81 @@
   .profile-image-container {
     width: 200px;
     height: 240px;
+  }
+}
+
+
+
+/* From Uiverse.io by barisdogansutcu */ 
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #01e056;
+  border: solid 1px #01e0572d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
   }
 }
