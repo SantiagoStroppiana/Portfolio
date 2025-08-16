@@ -115,7 +115,7 @@
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, var(--global-primary, #3b82f6), var(--global-primary-dark, #1d4ed8));
+  background: linear-gradient(135deg, var(--global-primary, #3b82f6), var(--global-primary, #3b82f6));
   /* background: linear-gradient(135deg, #10B981, #06B6D4); */
   color: white;
   border: none;

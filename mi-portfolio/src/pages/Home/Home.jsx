@@ -2,6 +2,7 @@ import "./Home.css";
 import { Stack } from "../AboutMe/Stack";
 import { Contact } from "../Contact/Contact";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { Projects } from "../Projects/Projects";
 
 export function Home() {
   return (
@@ -105,6 +106,8 @@ export function Home() {
       </section>
 
       <Stack />
+
+      <Projects />
 
       <Contact />
     </div>

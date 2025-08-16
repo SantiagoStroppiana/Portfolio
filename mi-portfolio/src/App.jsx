@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home/Home";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Stack } from "./pages/AboutMe/Stack";
+import { Projects } from "./pages/Projects/Projects";
 import { Contact } from "./pages/Contact/Contact";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
@@ -37,11 +38,11 @@ function App() {
       ),
       name: "AboutMe",
     },
-    // {
-    //   path: "/proyectos",
-    //   element: <Proyects />,
-    //   name: "Proyects",
-    // },
+    {
+      path: "/proyectos",
+      element: <Projects />,
+      name: "Projects",
+    },
     {
       path: "/contacto",
       element: <Contact />,

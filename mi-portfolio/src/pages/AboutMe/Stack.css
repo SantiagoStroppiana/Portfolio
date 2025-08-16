@@ -3,7 +3,8 @@
 }
 
 .skills {
-  background: linear-gradient(135deg, var(--global-background, #0c3f68) 0%, var(--global-muted, #0c3f68) 50%, var(--global-primary-dark, #0c3f68) 100%);
+       background-color: #00203a;
+
   padding: 6rem 0 8rem 0;
   position: relative;
   overflow: hidden;
